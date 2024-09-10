@@ -1,5 +1,8 @@
 package com.pedrosa.dscatalog.dto;
 
+import com.pedrosa.dscatalog.services.validation.UserInsertValid;
+
+@UserInsertValid
 public class UserInsertDTO extends UserDTO{
 
 	private String password;
