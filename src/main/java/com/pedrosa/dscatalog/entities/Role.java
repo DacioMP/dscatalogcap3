@@ -20,7 +20,6 @@ public class Role {
 	public Role() {}
 	
 	public Role(Long id, String authority) {
-		super();
 		this.id = id;
 		this.authority = authority;
 	}
