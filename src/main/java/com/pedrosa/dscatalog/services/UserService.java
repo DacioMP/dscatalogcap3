@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.pedrosa.dscatalog.dto.UserDTO;
 import com.pedrosa.dscatalog.dto.UserInsertDTO;
+import com.pedrosa.dscatalog.dto.UserUpdateDTO;
 import com.pedrosa.dscatalog.entities.Role;
 import com.pedrosa.dscatalog.entities.User;
 import com.pedrosa.dscatalog.repositories.RoleRepository;
@@ -57,7 +58,7 @@ public class UserService {
     }
 
     @Transactional
-    public UserDTO update(Long id, UserDTO dto) {
+    public UserDTO update(Long id, UserUpdateDTO dto) {
         try {
             User entity = repository.getReferenceById(id);
             copyDtoToEntity(dto, entity);
